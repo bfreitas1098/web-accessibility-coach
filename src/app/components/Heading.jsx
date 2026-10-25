@@ -3,7 +3,7 @@ import { CloudArrowUpIcon } from "@heroicons/react/24/outline";
 
 export default function Heading() {
   return (
-    <div className="p-6 sm:flex sm:items-center sm:justify-between">
+    <div className="p-8 sm:flex sm:items-center sm:justify-between">
       <div className="flex flex-col gap-2 justify-start">
         <h3 className="font-bold text-black text-4xl">
           Make every interface more inclusive
