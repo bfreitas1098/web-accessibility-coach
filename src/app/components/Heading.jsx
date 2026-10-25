@@ -15,7 +15,7 @@ export default function Heading() {
       <div className="mt-3 sm:mt-0 sm:ml-4">
         <button
           type="button"
-          className="inline-flex items-center rounded-lg bg-taupe-800 px-6 py-4 mr-6 text-md font-semibold text-taupe-50 shadow-xs hover:bg-taupe-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+          className="inline-flex items-center rounded-lg bg-taupe-800 px-6 py-4 text-md font-semibold text-taupe-50 shadow-xs hover:bg-taupe-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
         >
           <div className="flex items-center justify-center gap-2">
             <CloudArrowUpIcon className="size-4 color-taupe-50" />

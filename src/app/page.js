@@ -2,6 +2,7 @@ import "./globals.css";
 import Navigation from "./components/Navigation";
 import Heading from "./components/Heading";
 import ScreenshotWindow from "./components/ScreenshotWindow";
+import IssuesColumn from "./components/IssuesColumn";
 
 export default function Page() {
   return (
@@ -9,9 +10,12 @@ export default function Page() {
       <Navigation />
       <Heading />
 
-      <div className="grid grid-cols-3 gap-4 px-8">
-        <div className="col-span-2">
+      <div className="grid grid-cols-[800px_540px] grid-rows-2 gap-4 px-8">
+        <div className="row-span-1">
           <ScreenshotWindow />
+        </div>
+        <div className="row-span-2">
+          <IssuesColumn />
         </div>
       </div>
     </>
