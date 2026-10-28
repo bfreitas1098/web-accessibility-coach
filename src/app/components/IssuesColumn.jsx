@@ -4,9 +4,9 @@ import { EyeIcon, Squares2X2Icon } from "@heroicons/react/24/outline";
 export default function IssuesColumn() {
   return (
     <>
-      <div className="bg-taupe-50 text-taupe-900 rounded-md p-4">
+      <div className="bg-white text-deep-ink rounded-md p-4">
         <div className="flex items-center justify-between">
-          <span className="text-xl text-taupe-900 font-bold">
+          <span className="text-xl text-deep-ink font-bold">
             Potential issues
           </span>
           <div className="flex items-center justify-between gap-2">

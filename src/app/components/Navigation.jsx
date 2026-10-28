@@ -13,27 +13,24 @@ import {
 
 export default function Navigation() {
   return (
-    <Disclosure
-      as="nav"
-      className="relative bg-taupe-500 shadow-sm dark:bg-taupe-500 dark:shadow-none dark:after:pointer-events-none dark:after:absolute dark:after:inset-x-0 dark:after:bottom-0 dark:after:h-px"
-    >
+    <Disclosure as="nav" className="relative bg-white shadow-sm">
       <div className="mx-auto max-w-9xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-18 justify-between">
           <div className="flex">
-            <div className="flex shrink-0 items-center text-2xl font-bold text-taupe-50 pr-10">
-              <SparklesIcon className="size-6 mr-2 color-taupe-50" />
+            <div className="flex shrink-0 items-center text-2xl font-bold text-deep-ink pr-10">
+              <SparklesIcon className="size-6 mr-2" />
               Accessibility Coach
             </div>
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
               <a
                 href="#"
-                className="inline-flex items-center border-b-4 border-taupe-900 pt-1 text-md font-semibold text-taupe-50 rounded-sm w-31 pl-4"
+                className="inline-flex items-center border-b-4 border-accessible-teal pt-1 text-md font-semibold text-accessible-teal rounded-sm w-31 pl-4"
               >
                 New review
               </a>
               <a
                 href="#"
-                className="inline-flex items-center border-transparent px-1 pt-1 text-md font-medium text-taupe-900"
+                className="inline-flex items-center border-transparent px-1 pt-1 text-md font-medium text-deep-ink"
               >
                 History
               </a>
