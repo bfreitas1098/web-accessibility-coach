@@ -17,14 +17,14 @@ export default function Navigation() {
       <div className="mx-auto max-w-9xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-18 justify-between">
           <div className="flex">
-            <div className="flex shrink-0 items-center text-2xl font-bold text-deep-ink pr-10">
-              <SparklesIcon className="size-6 mr-2" />
-              Accessibility Coach
+            <div className="flex shrink-0 items-center text-2xl font-bold pr-10">
+              <SparklesIcon className="size-6 mr-2 text-accessible-teal" />
+              <span className="text-deep-ink">Accessibility Coach</span>
             </div>
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
               <a
                 href="#"
-                className="inline-flex items-center border-b-4 border-accessible-teal pt-1 text-md font-semibold text-accessible-teal rounded-sm w-31 pl-4"
+                className="inline-flex items-center border-b-4 border-accessible-teal pt-1 text-md font-semibold text-accessible-teal w-31 pl-4"
               >
                 New review
               </a>

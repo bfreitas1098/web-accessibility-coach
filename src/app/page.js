@@ -10,7 +10,7 @@ export default function Page() {
       <Navigation />
       <Heading />
 
-      <div className="grid grid-cols-[800px_540px] grid-rows-2 gap-4 px-8">
+      <div className="grid grid-cols-[1.5fr_1fr] grid-rows-2 gap-4 px-8">
         <div className="row-span-1">
           <ScreenshotWindow />
         </div>
