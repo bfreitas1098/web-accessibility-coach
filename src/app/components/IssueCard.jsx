@@ -21,7 +21,7 @@ export default function IssueCard() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
             inventore. Cumque eligendi eum eos quis in nam libero doloremque.
           </span>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 cursor-pointer border border-transparent hover:border-b-accessible-teal w-fit">
             <span className="text-sm text-accessible-teal font-medium">
               View suggestion
             </span>
