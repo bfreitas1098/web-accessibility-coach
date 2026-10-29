@@ -7,11 +7,11 @@ import {
 } from "@headlessui/react";
 import {
   Bars3Icon,
-  XMarkIcon,
   CursorArrowRippleIcon,
+  XMarkIcon,
 } from "@heroicons/react/24/outline";
 
-export default function Navigation() {
+export default function Navigation({ activeItem = "new-review" }) {
   return (
     <Disclosure as="nav" className="relative bg-white shadow-sm">
       <div className="mx-auto max-w-9xl px-4 sm:px-6 lg:px-8">
@@ -21,16 +21,18 @@ export default function Navigation() {
               <CursorArrowRippleIcon className="size-7 mr-2 text-accessible-teal" />
               <span className="text-deep-ink">Accessibility Coach</span>
             </div>
-            <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
+            <div className="sm:ml-6 sm:flex sm:space-x-8">
               <a
-                href="#"
-                className="inline-flex items-center border-b-4 border-accessible-teal pt-1 text-md font-semibold text-accessible-teal w-31 pl-4"
+                href="/"
+                aria-current={activeItem === "new-review" ? "page" : undefined}
+                className="inline-flex items-center border-b-4 border-transparent pt-1 text-md font-semibold text-deep-ink w-31 pl-4 aria-[current=page]:border-accessible-teal aria-[current=page]:text-accessible-teal"
               >
                 New review
               </a>
               <a
-                href="#"
-                className="inline-flex items-center border-transparent px-1 pt-1 text-md font-medium text-deep-ink"
+                href="/?view=history"
+                aria-current={activeItem === "history" ? "page" : undefined}
+                className="inline-flex items-center border-b-4 border-transparent px-1 pt-1 text-md font-medium text-deep-ink aria-[current=page]:border-accessible-teal aria-[current=page]:text-accessible-teal"
               >
                 History
               </a>
@@ -59,14 +61,14 @@ export default function Navigation() {
         <div className="space-y-1 pt-2 pb-3">
           <DisclosureButton
             as="a"
-            href="#"
+            href="/"
             className="block border-l-4 border-indigo-600 bg-indigo-50 py-2 pr-4 pl-3 text-base font-medium text-indigo-700"
           >
             New review
           </DisclosureButton>
           <DisclosureButton
             as="a"
-            href="#"
+            href="/?view=history"
             className="block border-l-4 border-transparent py-2 pr-4 pl-3 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
           >
             History

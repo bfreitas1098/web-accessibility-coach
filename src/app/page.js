@@ -1,12 +1,21 @@
 import "./globals.css";
-import Navigation from "./components/Navigation";
-import Heading from "./components/Heading";
-import ScreenshotWindow from "./components/ScreenshotWindow";
-import IssuesColumn from "./components/IssuesColumn";
-import NewScreenshotBox from "./components/NewScreenshotBox";
 import { SparklesIcon } from "@heroicons/react/24/outline";
+import Heading from "./components/Heading";
+import IssuesColumn from "./components/IssuesColumn";
+import Navigation from "./components/Navigation";
+import NewScreenshotBox from "./components/NewScreenshotBox";
+import ScreenshotWindow from "./components/ScreenshotWindow";
+import History from "./history";
 
-export default function Page() {
+export const instant = false;
+
+export default async function Page({ searchParams }) {
+  const { view } = await searchParams;
+
+  if (view === "history") {
+    return <History />;
+  }
+
   return (
     <>
       <Navigation />
