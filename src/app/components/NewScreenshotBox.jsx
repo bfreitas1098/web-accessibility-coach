@@ -10,7 +10,7 @@ export default function NewScreenshotBox() {
         <div className="text-sm/6 text-slate-400">
           Drop another screenshot here
           <br />
-          PNG, JPG, or WebP * Max 10 MB
+          PNG, JPG, or WebP • Max 10 MB
         </div>
         <button
           type="button"

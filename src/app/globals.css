@@ -9,5 +9,5 @@
 }
 
 body {
-  @apply bg-soft-sky;
+  background-color: var(--color-soft-sky);
 }
