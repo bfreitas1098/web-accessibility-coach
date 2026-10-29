@@ -5,7 +5,7 @@ import IssueCard from "./IssueCard";
 export default function IssuesColumn() {
   return (
     <>
-      <div className="bg-white text-deep-ink rounded-md p-4">
+      <div className="bg-white text-deep-ink rounded-md p-4 shadow-md">
         <div className="flex items-center justify-between pb-6">
           <span className="text-xl text-deep-ink font-bold">
             Potential issues

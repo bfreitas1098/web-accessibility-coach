@@ -13,7 +13,7 @@ export default function ScreenshotWindow() {
       <div className="rounded-full w-8 h-8 text-sm bg-warm-amber border border-white flex justify-center items-center issue-3 absolute z-1000 top-171 left-105">
         3
       </div>
-      <div className="rounded-md border-4 border-white shadow-[2px_10px_10px_#e8e4e3] relative">
+      <div className="rounded-md border-4 border-white shadow-md relative">
         <img src={screenshotExample.src} alt="Screenshot example" />
       </div>
     </>
