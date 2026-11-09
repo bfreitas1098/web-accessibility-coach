@@ -29,13 +29,13 @@ export default function Navigation({ activeItem = "new-review" }) {
               >
                 New review
               </a>
-              <a
+              {/* <a
                 href="/?view=history"
                 aria-current={activeItem === "history" ? "page" : undefined}
                 className="inline-flex items-center border-b-4 border-transparent px-1 pt-1 text-md font-medium text-deep-ink aria-[current=page]:border-accessible-teal aria-[current=page]:text-accessible-teal"
               >
                 History
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -66,13 +66,13 @@ export default function Navigation({ activeItem = "new-review" }) {
           >
             New review
           </DisclosureButton>
-          <DisclosureButton
+          {/* <DisclosureButton
             as="a"
             href="/?view=history"
             className="block border-l-4 border-transparent py-2 pr-4 pl-3 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
           >
             History
-          </DisclosureButton>
+          </DisclosureButton> */}
         </div>
       </DisclosurePanel>
     </Disclosure>
