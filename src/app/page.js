@@ -3,6 +3,7 @@ import Heading from "./components/Heading";
 import Navigation from "./components/Navigation";
 import ScreenshotReview from "./components/ScreenshotReview";
 import History from "./history";
+// import NewScreenshotWindow from "./components/NewScreenshotWindow";
 
 export const instant = false;
 
@@ -17,6 +18,7 @@ export default async function Page({ searchParams }) {
     <>
       <Navigation />
       <Heading />
+      {/* <NewScreenshotWindow /> */}
       <ScreenshotReview />
     </>
   );

@@ -1,5 +1,4 @@
 import "../globals.css";
-import { CloudArrowUpIcon } from "@heroicons/react/24/outline";
 
 export default function Heading() {
   return (
@@ -11,17 +10,6 @@ export default function Heading() {
         <span className="font-medium text-deep-ink text-lg">
           Review potential accessibility issues in your screenshots
         </span>
-      </div>
-      <div className="mt-3 sm:mt-0 sm:ml-4">
-        <button
-          type="button"
-          className="inline-flex items-center rounded-lg bg-accessible-teal px-6 py-4 text-md font-semibold text-white shadow-xs hover:bg-taupe-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black cursor-pointer"
-        >
-          <div className="flex items-center justify-center gap-2">
-            <CloudArrowUpIcon className="size-8 color-white" />
-            Upload Screenshot
-          </div>
-        </button>
       </div>
     </div>
   );
