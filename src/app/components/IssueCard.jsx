@@ -1,9 +1,7 @@
 "use client";
 
-import { useState } from "react";
 import "../globals.css";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
-// import Suggestion from "./Suggestion";
 
 export default function IssueCard({
   IssueTypeCircle,
@@ -11,6 +9,7 @@ export default function IssueCard({
   IssueHeading,
   IssueDescription,
   IssueType,
+  onSelectIssue,
 }) {
   return (
     <>
@@ -30,6 +29,7 @@ export default function IssueCard({
             <button
               className="flex items-center gap-2 cursor-pointer border border-transparent hover:border-b-accessible-teal w-fit"
               type="button"
+              onClick={() => onSelectIssue(IssueNumber)}
             >
               <span className="text-sm text-accessible-teal font-medium">
                 View suggestion

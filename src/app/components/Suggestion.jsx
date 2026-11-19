@@ -12,7 +12,6 @@ export default function Suggestion({
   className = "",
   issueNumber,
 }) {
-  // if (!open) return null;
   if (issueNumber === null) return null;
 
   return (

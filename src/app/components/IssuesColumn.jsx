@@ -1,12 +1,12 @@
 import "../globals.css";
 import {
+  EnvelopeIcon,
   EyeIcon,
   Squares2X2Icon,
-  EnvelopeIcon,
 } from "@heroicons/react/24/outline";
 import IssueCard from "./IssueCard";
 
-export default function IssuesColumn() {
+export default function IssuesColumn({ onSelectIssue }) {
   return (
     <>
       <div className="bg-white text-deep-ink rounded-md p-4 shadow-md">
@@ -31,30 +31,33 @@ export default function IssuesColumn() {
         <div className="flex flex-col gap-4">
           <IssueCard
             IssueTypeCircle={"Aa"}
-            IssueNumber={"1"}
+            IssueNumber={1}
             IssueHeading={"Text may be hard to read"}
             IssueDescription={
               "The hero heading is white on a bright background, making it difficult to read."
             }
             IssueType={"Readability"}
+            onSelectIssue={onSelectIssue}
           />
           <IssueCard
             IssueTypeCircle={"Aa"}
-            IssueNumber={"2"}
+            IssueNumber={2}
             IssueHeading={"Text may be hard to read"}
             IssueDescription={
               "The destination descriptions and links are a light color on a light background, making it difficult to read."
             }
             IssueType={"Readability"}
+            onSelectIssue={onSelectIssue}
           />
           <IssueCard
             IssueTypeCircle={<EnvelopeIcon className="size-6" />}
-            IssueNumber={"3"}
+            IssueNumber={3}
             IssueHeading={"Input label could be clearer"}
             IssueDescription={
               "The email field could have a more visible label."
             }
             IssueType={"Content"}
+            onSelectIssue={onSelectIssue}
           />
         </div>
       </div>
