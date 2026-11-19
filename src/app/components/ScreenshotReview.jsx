@@ -8,9 +8,9 @@ import ScreenshotWindow from "./ScreenshotWindow";
 import Suggestion from "./Suggestion";
 
 const suggestionPositions = {
-  1: "top-90 left-60",
-  2: "top-204 -left-17",
-  3: "top-193 left-143",
+  1: "top-82 left-40",
+  2: "top-131 -left-22",
+  3: "top-143 left-99",
 };
 
 export default function ScreenshotReview() {
